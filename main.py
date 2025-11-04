@@ -29,10 +29,12 @@ def main():
         print("\n" + "="*60)
         print("RESULTS")
         print("="*60)
-        for flight in output['flights']:
-            print(f"\nFlight {flight['flight_number']}")
-            print(f"   Departure: {flight['departure_time']}")
-            print(f"   Arrival: {flight['arrival_time']}")
+        for i, flight in enumerate(output['flights'], 1):
+            print(f"\nFlight {i}:")
+            print(f"   Nonstop: {'Yes' if flight['is_nonstop'] else 'No'}")
+            for seg in flight['segments']:
+                print(f"   {seg['flight_number']}: {seg['departure_time']} -> {seg['arrival_time']}")
+            print(f"   Duration: {flight['total_duration']}")
             print(f"   Cash Price: ${flight['cash_price_usd']:.2f}")
             print(f"   Award: {flight['points_required']:,} pts + ${flight['taxes_fees_usd']:.2f}")
             print(f"   CPP: {flight['cpp']:.2f}c")

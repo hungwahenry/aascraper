@@ -53,10 +53,19 @@ def match_and_calculate(cash_flights: list, award_flights: list):
         if points and cash_price:
             cpp = calculate_cpp(cash_price, points, taxes)
 
+            # Format flight number (remove AA prefix if exists, then add it)
+            flight_num = cash.get('flight_number', 'N/A').replace('AA', '').strip()
+
             flights.append({
-                "flight_number": f"AA{i + 1}",
-                "departure_time": cash.get('departure_time'),
-                "arrival_time": cash.get('arrival_time'),
+                "is_nonstop": cash.get('is_nonstop', True),
+                "segments": [
+                    {
+                        "flight_number": f"AA{flight_num}" if flight_num != 'N/A' else f"AA{i + 1}",
+                        "departure_time": cash.get('departure_time'),
+                        "arrival_time": cash.get('arrival_time')
+                    }
+                ],
+                "total_duration": cash.get('duration'),
                 "points_required": points,
                 "cash_price_usd": cash_price,
                 "taxes_fees_usd": taxes,

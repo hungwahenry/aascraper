@@ -139,11 +139,27 @@ def extract_flight_data(driver, is_award=False):
                 main_button = row.find_element(By.CSS_SELECTOR, 'button.btn-flight.MAIN')
                 price_text = main_button.find_element(By.CSS_SELECTOR, '.per-pax-amount').text.strip()
 
+            # Extract flight number and stops info
+            try:
+                flight_number_elem = row.find_element(By.CSS_SELECTOR, '.connecting-flt-details.flight-number')
+                flight_number = flight_number_elem.text.strip()
+            except:
+                flight_number = "N/A"
+
+            # Check if nonstop
+            try:
+                stops_elem = row.find_element(By.CSS_SELECTOR, '.nonstop')
+                is_nonstop = True
+            except:
+                is_nonstop = False
+
             flights.append({
                 "departure_time": dep_time,
                 "arrival_time": arr_time,
                 "duration": duration,
-                "price": price_text
+                "price": price_text,
+                "flight_number": flight_number,
+                "is_nonstop": is_nonstop
             })
 
             print(f"[FLIGHT {i+1}] {dep_time} -> {arr_time} | {duration} | {price_text}")
