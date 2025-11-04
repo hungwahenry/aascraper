@@ -16,35 +16,30 @@ def human_type(element, text):
         time.sleep(random_delay(DELAY_TYPING))
 
 def fill_search_form(driver, redeem_miles=False):
-    """Fill out AA.com search form
-
-    Args:
-        driver: Selenium WebDriver
-        redeem_miles: If True, check the "Redeem miles" box for award pricing
-    """
+    """Fill out AA.com search form"""
     print(f"[FORM] Filling search form (redeem_miles={redeem_miles})...")
 
-    # Click "One way" radio button - click the label instead of hidden input
+    # Click "One way" radio button
     one_way_label = wait_for_clickable(driver, 'label[for="flightSearchForm.tripType.oneWay"]')
     if one_way_label:
         one_way_label.click()
         time.sleep(random_delay(DELAY_ACTION))
 
-    # Check "Redeem miles" if award pricing - click the label
+    # Check "Redeem miles" if award pricing
     if redeem_miles:
         redeem_label = wait_for_clickable(driver, 'label[for="flightSearchForm.tripType.redeemMiles"]')
         if redeem_label:
             redeem_label.click()
             time.sleep(random_delay(DELAY_ACTION))
 
-    # Select 1 passenger (should be default, but let's be explicit)
+    # Select 1 passenger
     from selenium.webdriver.support.ui import Select
     try:
         passenger_select = Select(driver.find_element(By.ID, 'flightSearchForm.adultOrSeniorPassengerCount'))
         passenger_select.select_by_value('1')
         time.sleep(0.5)
     except:
-        pass  # Already selected
+        pass
 
     # Fill origin
     origin_input = wait_for_element(driver, '#reservationFlightSearchForm\\.originAirport')
@@ -53,7 +48,7 @@ def fill_search_form(driver, redeem_miles=False):
         time.sleep(0.5)
         origin_input.clear()
         origin_input.send_keys(ORIGIN)
-        time.sleep(1)  # Wait for autocomplete
+        time.sleep(1)
         origin_input.send_keys(Keys.ARROW_DOWN)
         time.sleep(0.3)
         origin_input.send_keys(Keys.ENTER)
@@ -66,7 +61,7 @@ def fill_search_form(driver, redeem_miles=False):
         time.sleep(0.5)
         dest_input.clear()
         dest_input.send_keys(DESTINATION)
-        time.sleep(1)  # Wait for autocomplete
+        time.sleep(1)
         dest_input.send_keys(Keys.ARROW_DOWN)
         time.sleep(0.3)
         dest_input.send_keys(Keys.ENTER)
@@ -87,16 +82,10 @@ def fill_search_form(driver, redeem_miles=False):
     if search_button:
         search_button.click()
 
-    # Wait for navigation to results
     time.sleep(random_delay(DELAY_AFTER_SEARCH))
 
 def extract_flight_data(driver, is_award=False):
-    """Extract flight data from results page
-
-    Args:
-        driver: Selenium WebDriver
-        is_award: True if scraping award pricing, False for cash pricing
-    """
+    """Extract flight data from results page"""
     print("[EXTRACT] Extracting flight data...")
 
     # Wait for flights to load
@@ -166,12 +155,7 @@ def extract_flight_data(driver, is_award=False):
     return flights
 
 def scrape_flights(driver, redeem_miles=False):
-    """Main scraping function
-
-    Args:
-        driver: Selenium WebDriver
-        redeem_miles: If True, scrape award prices; if False, scrape cash prices
-    """
+    """Main scraping function"""
     mode = "award" if redeem_miles else "cash"
     print(f"\n{'='*60}")
     print(f"[START] Starting {mode.upper()} price scrape")

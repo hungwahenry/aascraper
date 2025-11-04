@@ -3,24 +3,14 @@
 import re
 
 def parse_price(price_str: str):
-    """Parse price string to extract dollar amount
-
-    Examples:
-        "$234.50" -> 234.50
-        "$1,234.50" -> 1234.50
-    """
+    """Parse price string to extract dollar amount"""
     match = re.search(r'\$?([\d,]+\.?\d*)', price_str)
     if match:
         return float(match.group(1).replace(',', ''))
     return 0.0
 
 def parse_award_price(price_str: str):
-    """Parse award price string to extract points and taxes
-
-    Examples:
-        "35k + $5.60" -> (35000, 5.60)
-        "25,000 + $11.20" -> (25000, 11.20)
-    """
+    """Parse award price string to extract points and taxes"""
     # Extract points (handles "35k" or "35,000")
     points_match = re.search(r'([\d,]+)k?', price_str)
     if not points_match:
@@ -43,14 +33,6 @@ def calculate_cpp(cash_price: float, points: int, taxes: float):
     """Calculate Cents Per Point (CPP)
 
     Formula: (cash_price - taxes_fees) / points_required * 100
-
-    Args:
-        cash_price: Cash price in dollars
-        points: Points required
-        taxes: Taxes/fees in dollars
-
-    Returns:
-        CPP value as float
     """
     if points == 0:
         return 0.0
@@ -59,10 +41,7 @@ def calculate_cpp(cash_price: float, points: int, taxes: float):
     return round(cpp, 2)
 
 def match_and_calculate(cash_flights: list, award_flights: list):
-    """Match cash and award flights, calculate CPP, return final output format
-
-    Simple matching by index for now (assumes same flight order)
-    """
+    """Match cash and award flights, calculate CPP, return final output format"""
     from src.config import ORIGIN, DESTINATION, DEPARTURE_DATE, PASSENGERS
 
     flights = []

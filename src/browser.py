@@ -18,7 +18,7 @@ def create_undetected_driver(headless=False):
     if headless:
         options.add_argument('--headless=new')
 
-    # Use Chrome version from config with keep_alive
+    # Use Chrome version from our config, ensure to keep-alive
     driver = uc.Chrome(
         options=options,
         version_main=CHROME_VERSION,

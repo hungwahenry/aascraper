@@ -1,6 +1,7 @@
 """AA Flight Scraper - Main entry point"""
 # -*- coding: utf-8 -*-
 import json
+import os
 from datetime import datetime
 from src.browser import create_undetected_driver
 from src.scraper import scrape_both_prices
@@ -16,7 +17,9 @@ def main():
 
     try:
         print("Setting up browser...")
-        driver = create_undetected_driver(headless=False)
+        # Run headless in Docker, otherwise normal mode
+        headless = os.getenv('DOCKER_ENV', 'false').lower() == 'true'
+        driver = create_undetected_driver(headless=headless)
 
         data = scrape_both_prices(driver)
 
