@@ -1,0 +1,612 @@
+{
+  "search_metadata": {
+    "origin": "LAX",
+    "destination": "JFK",
+    "date": "2025-12-15",
+    "passengers": 1,
+    "cabin_class": "economy"
+  },
+  "flights": [
+    {
+      "is_nonstop": true,
+      "segments": [
+        {
+          "flight_number": "AA1",
+          "departure_time": "12:15 AM AM",
+          "arrival_time": "8:29 AM AM"
+        }
+      ],
+      "total_duration": "5h 14m",
+      "points_required": 19000,
+      "cash_price_usd": 184.0,
+      "taxes_fees_usd": 5.6,
+      "cpp": 0.94
+    },
+    {
+      "is_nonstop": true,
+      "segments": [
+        {
+          "flight_number": "AA2",
+          "departure_time": "6:05 AM AM",
+          "arrival_time": "2:10 PM PM"
+        }
+      ],
+      "total_duration": "5h 5m",
+      "points_required": 15000,
+      "cash_price_usd": 159.0,
+      "taxes_fees_usd": 5.6,
+      "cpp": 1.02
+    },
+    {
+      "is_nonstop": true,
+      "segments": [
+        {
+          "flight_number": "AA3",
+          "departure_time": "7:00 AM AM",
+          "arrival_time": "3:32 PM PM"
+        }
+      ],
+      "total_duration": "5h 32m",
+      "points_required": 20000,
+      "cash_price_usd": 209.0,
+      "taxes_fees_usd": 5.6,
+      "cpp": 1.02
+    },
+    {
+      "is_nonstop": true,
+      "segments": [
+        {
+          "flight_number": "AA4",
+          "departure_time": "8:00 AM AM",
+          "arrival_time": "4:28 PM PM"
+        }
+      ],
+      "total_duration": "5h 28m",
+      "points_required": 27000,
+      "cash_price_usd": 249.0,
+      "taxes_fees_usd": 5.6,
+      "cpp": 0.9
+    },
+    {
+      "is_nonstop": true,
+      "segments": [
+        {
+          "flight_number": "AA5",
+          "departure_time": "10:15 AM AM",
+          "arrival_time": "6:42 PM PM"
+        }
+      ],
+      "total_duration": "5h 27m",
+      "points_required": 27000,
+      "cash_price_usd": 319.0,
+      "taxes_fees_usd": 5.6,
+      "cpp": 1.16
+    },
+    {
+      "is_nonstop": true,
+      "segments": [
+        {
+          "flight_number": "AA6",
+          "departure_time": "11:20 AM AM",
+          "arrival_time": "7:45 PM PM"
+        }
+      ],
+      "total_duration": "5h 25m",
+      "points_required": 24000,
+      "cash_price_usd": 249.0,
+      "taxes_fees_usd": 5.6,
+      "cpp": 1.01
+    },
+    {
+      "is_nonstop": true,
+      "segments": [
+        {
+          "flight_number": "AA7",
+          "departure_time": "12:37 PM PM",
+          "arrival_time": "9:00 PM PM"
+        }
+      ],
+      "total_duration": "5h 23m",
+      "points_required": 27000,
+      "cash_price_usd": 319.0,
+      "taxes_fees_usd": 5.6,
+      "cpp": 1.16
+    },
+    {
+      "is_nonstop": true,
+      "segments": [
+        {
+          "flight_number": "AA8",
+          "departure_time": "3:40 PM PM",
+          "arrival_time": "11:49 PM PM"
+        }
+      ],
+      "total_duration": "5h 9m",
+      "points_required": 15000,
+      "cash_price_usd": 114.0,
+      "taxes_fees_usd": 5.6,
+      "cpp": 0.72
+    },
+    {
+      "is_nonstop": true,
+      "segments": [
+        {
+          "flight_number": "AA9",
+          "departure_time": "9:45 PM PM",
+          "arrival_time": "6:00 AM+1\n, Arrives on December 16 AM"
+        }
+      ],
+      "total_duration": "5h 15m",
+      "points_required": 19000,
+      "cash_price_usd": 184.0,
+      "taxes_fees_usd": 5.6,
+      "cpp": 0.94
+    },
+    {
+      "is_nonstop": false,
+      "segments": [
+        {
+          "flight_number": "AA10",
+          "departure_time": "12:45 AM AM",
+          "arrival_time": "11:37 AM AM"
+        }
+      ],
+      "total_duration": "7h 52m",
+      "points_required": 15000,
+      "cash_price_usd": 177.0,
+      "taxes_fees_usd": 5.6,
+      "cpp": 1.14
+    },
+    {
+      "is_nonstop": false,
+      "segments": [
+        {
+          "flight_number": "AA11",
+          "departure_time": "12:45 AM AM",
+          "arrival_time": "1:29 PM PM"
+        }
+      ],
+      "total_duration": "9h 44m",
+      "points_required": 15000,
+      "cash_price_usd": 177.0,
+      "taxes_fees_usd": 5.6,
+      "cpp": 1.14
+    },
+    {
+      "is_nonstop": false,
+      "segments": [
+        {
+          "flight_number": "AA12",
+          "departure_time": "12:45 AM AM",
+          "arrival_time": "7:29 PM PM"
+        }
+      ],
+      "total_duration": "15h 44m",
+      "points_required": 15000,
+      "cash_price_usd": 251.0,
+      "taxes_fees_usd": 5.6,
+      "cpp": 1.64
+    },
+    {
+      "is_nonstop": false,
+      "segments": [
+        {
+          "flight_number": "AA13",
+          "departure_time": "12:59 AM AM",
+          "arrival_time": "11:28 AM AM"
+        }
+      ],
+      "total_duration": "7h 29m",
+      "points_required": 15000,
+      "cash_price_usd": 259.0,
+      "taxes_fees_usd": 11.2,
+      "cpp": 1.65
+    },
+    {
+      "is_nonstop": false,
+      "segments": [
+        {
+          "flight_number": "AA14",
+          "departure_time": "6:00 AM AM",
+          "arrival_time": "7:29 PM PM"
+        }
+      ],
+      "total_duration": "10h 29m",
+      "points_required": 15000,
+      "cash_price_usd": 177.0,
+      "taxes_fees_usd": 5.6,
+      "cpp": 1.14
+    },
+    {
+      "is_nonstop": false,
+      "segments": [
+        {
+          "flight_number": "AA15",
+          "departure_time": "6:06 AM AM",
+          "arrival_time": "7:00 PM PM"
+        }
+      ],
+      "total_duration": "9h 54m",
+      "points_required": 15000,
+      "cash_price_usd": 177.0,
+      "taxes_fees_usd": 11.2,
+      "cpp": 1.11
+    },
+    {
+      "is_nonstop": false,
+      "segments": [
+        {
+          "flight_number": "AA16",
+          "departure_time": "6:08 AM AM",
+          "arrival_time": "5:15 PM PM"
+        }
+      ],
+      "total_duration": "8h 7m",
+      "points_required": 15000,
+      "cash_price_usd": 219.0,
+      "taxes_fees_usd": 11.2,
+      "cpp": 1.39
+    },
+    {
+      "is_nonstop": false,
+      "segments": [
+        {
+          "flight_number": "AA17",
+          "departure_time": "6:10 AM AM",
+          "arrival_time": "4:29 PM PM"
+        }
+      ],
+      "total_duration": "7h 19m",
+      "points_required": 15000,
+      "cash_price_usd": 259.0,
+      "taxes_fees_usd": 11.2,
+      "cpp": 1.65
+    },
+    {
+      "is_nonstop": false,
+      "segments": [
+        {
+          "flight_number": "AA18",
+          "departure_time": "7:59 AM AM",
+          "arrival_time": "7:17 PM PM"
+        }
+      ],
+      "total_duration": "8h 18m",
+      "points_required": 15000,
+      "cash_price_usd": 259.0,
+      "taxes_fees_usd": 5.6,
+      "cpp": 1.69
+    },
+    {
+      "is_nonstop": false,
+      "segments": [
+        {
+          "flight_number": "AA19",
+          "departure_time": "8:30 AM AM",
+          "arrival_time": "7:18 PM PM"
+        }
+      ],
+      "total_duration": "7h 48m",
+      "points_required": 15000,
+      "cash_price_usd": 329.0,
+      "taxes_fees_usd": 5.6,
+      "cpp": 2.16
+    },
+    {
+      "is_nonstop": false,
+      "segments": [
+        {
+          "flight_number": "AA20",
+          "departure_time": "8:30 AM AM",
+          "arrival_time": "7:35 PM PM"
+        }
+      ],
+      "total_duration": "8h 5m",
+      "points_required": 15000,
+      "cash_price_usd": 329.0,
+      "taxes_fees_usd": 11.2,
+      "cpp": 2.12
+    },
+    {
+      "is_nonstop": false,
+      "segments": [
+        {
+          "flight_number": "AA21",
+          "departure_time": "8:32 AM AM",
+          "arrival_time": "9:04 PM PM"
+        }
+      ],
+      "total_duration": "9h 32m",
+      "points_required": 23000,
+      "cash_price_usd": 177.0,
+      "taxes_fees_usd": 5.6,
+      "cpp": 0.75
+    },
+    {
+      "is_nonstop": false,
+      "segments": [
+        {
+          "flight_number": "AA22",
+          "departure_time": "8:33 AM AM",
+          "arrival_time": "9:30 PM PM"
+        }
+      ],
+      "total_duration": "9h 57m",
+      "points_required": 15000,
+      "cash_price_usd": 259.0,
+      "taxes_fees_usd": 5.6,
+      "cpp": 1.69
+    },
+    {
+      "is_nonstop": false,
+      "segments": [
+        {
+          "flight_number": "AA23",
+          "departure_time": "9:00 AM AM",
+          "arrival_time": "8:57 PM PM"
+        }
+      ],
+      "total_duration": "8h 57m",
+      "points_required": 15000,
+      "cash_price_usd": 259.0,
+      "taxes_fees_usd": 5.6,
+      "cpp": 1.69
+    },
+    {
+      "is_nonstop": false,
+      "segments": [
+        {
+          "flight_number": "AA24",
+          "departure_time": "9:20 AM AM",
+          "arrival_time": "8:29 PM PM"
+        }
+      ],
+      "total_duration": "8h 9m",
+      "points_required": 15000,
+      "cash_price_usd": 177.0,
+      "taxes_fees_usd": 5.6,
+      "cpp": 1.14
+    },
+    {
+      "is_nonstop": false,
+      "segments": [
+        {
+          "flight_number": "AA25",
+          "departure_time": "9:20 AM AM",
+          "arrival_time": "10:00 PM PM"
+        }
+      ],
+      "total_duration": "9h 40m",
+      "points_required": 15000,
+      "cash_price_usd": 177.0,
+      "taxes_fees_usd": 5.6,
+      "cpp": 1.14
+    },
+    {
+      "is_nonstop": false,
+      "segments": [
+        {
+          "flight_number": "AA26",
+          "departure_time": "9:40 AM AM",
+          "arrival_time": "7:45 PM PM"
+        }
+      ],
+      "total_duration": "7h 5m",
+      "points_required": 20000,
+      "cash_price_usd": 177.0,
+      "taxes_fees_usd": 11.2,
+      "cpp": 0.83
+    },
+    {
+      "is_nonstop": false,
+      "segments": [
+        {
+          "flight_number": "AA27",
+          "departure_time": "10:07 AM AM",
+          "arrival_time": "9:04 PM PM"
+        }
+      ],
+      "total_duration": "7h 57m",
+      "points_required": 19000,
+      "cash_price_usd": 194.0,
+      "taxes_fees_usd": 11.2,
+      "cpp": 0.96
+    },
+    {
+      "is_nonstop": false,
+      "segments": [
+        {
+          "flight_number": "AA28",
+          "departure_time": "10:07 AM AM",
+          "arrival_time": "10:59 PM PM"
+        }
+      ],
+      "total_duration": "9h 52m",
+      "points_required": 17000,
+      "cash_price_usd": 259.0,
+      "taxes_fees_usd": 11.2,
+      "cpp": 1.46
+    },
+    {
+      "is_nonstop": false,
+      "segments": [
+        {
+          "flight_number": "AA29",
+          "departure_time": "10:25 AM AM",
+          "arrival_time": "9:30 PM PM"
+        }
+      ],
+      "total_duration": "8h 5m",
+      "points_required": 12000,
+      "cash_price_usd": 259.0,
+      "taxes_fees_usd": 5.6,
+      "cpp": 2.11
+    },
+    {
+      "is_nonstop": false,
+      "segments": [
+        {
+          "flight_number": "AA30",
+          "departure_time": "11:05 AM AM",
+          "arrival_time": "10:00 PM PM"
+        }
+      ],
+      "total_duration": "7h 55m",
+      "points_required": 12000,
+      "cash_price_usd": 177.0,
+      "taxes_fees_usd": 5.6,
+      "cpp": 1.43
+    },
+    {
+      "is_nonstop": false,
+      "segments": [
+        {
+          "flight_number": "AA31",
+          "departure_time": "1:11 PM PM",
+          "arrival_time": "10:59 PM PM"
+        }
+      ],
+      "total_duration": "6h 48m",
+      "points_required": 15000,
+      "cash_price_usd": 329.0,
+      "taxes_fees_usd": 5.6,
+      "cpp": 2.16
+    },
+    {
+      "is_nonstop": false,
+      "segments": [
+        {
+          "flight_number": "AA32",
+          "departure_time": "5:03 PM PM",
+          "arrival_time": "7:00 AM+1\n, Arrives on December 16 AM"
+        }
+      ],
+      "total_duration": "10h 57m",
+      "points_required": 15000,
+      "cash_price_usd": 198.0,
+      "taxes_fees_usd": 5.6,
+      "cpp": 1.28
+    },
+    {
+      "is_nonstop": false,
+      "segments": [
+        {
+          "flight_number": "AA33",
+          "departure_time": "6:50 PM PM",
+          "arrival_time": "7:00 AM+1\n, Arrives on December 16 AM"
+        }
+      ],
+      "total_duration": "9h 10m",
+      "points_required": 12000,
+      "cash_price_usd": 177.0,
+      "taxes_fees_usd": 5.6,
+      "cpp": 1.43
+    },
+    {
+      "is_nonstop": false,
+      "segments": [
+        {
+          "flight_number": "AA34",
+          "departure_time": "7:30 PM PM",
+          "arrival_time": "6:30 AM+1\n, Arrives on December 16 AM"
+        }
+      ],
+      "total_duration": "8h 0m",
+      "points_required": 32000,
+      "cash_price_usd": 177.0,
+      "taxes_fees_usd": 5.6,
+      "cpp": 0.54
+    },
+    {
+      "is_nonstop": false,
+      "segments": [
+        {
+          "flight_number": "AA35",
+          "departure_time": "8:00 PM PM",
+          "arrival_time": "6:30 AM+1\n, Arrives on December 16 AM"
+        }
+      ],
+      "total_duration": "7h 30m",
+      "points_required": 15000,
+      "cash_price_usd": 177.0,
+      "taxes_fees_usd": 5.6,
+      "cpp": 1.14
+    },
+    {
+      "is_nonstop": false,
+      "segments": [
+        {
+          "flight_number": "AA36",
+          "departure_time": "8:00 PM PM",
+          "arrival_time": "7:00 AM+1\n, Arrives on December 16 AM"
+        }
+      ],
+      "total_duration": "8h 0m",
+      "points_required": 15000,
+      "cash_price_usd": 177.0,
+      "taxes_fees_usd": 5.6,
+      "cpp": 1.14
+    },
+    {
+      "is_nonstop": false,
+      "segments": [
+        {
+          "flight_number": "AA37",
+          "departure_time": "10:37 PM PM",
+          "arrival_time": "10:00 AM+1\n, Arrives on December 16 AM"
+        }
+      ],
+      "total_duration": "8h 23m",
+      "points_required": 15000,
+      "cash_price_usd": 177.0,
+      "taxes_fees_usd": 5.6,
+      "cpp": 1.14
+    },
+    {
+      "is_nonstop": false,
+      "segments": [
+        {
+          "flight_number": "AA38",
+          "departure_time": "10:49 PM PM",
+          "arrival_time": "1:29 PM+1\n, Arrives on December 16 PM"
+        }
+      ],
+      "total_duration": "11h 40m",
+      "points_required": 15000,
+      "cash_price_usd": 192.0,
+      "taxes_fees_usd": 11.2,
+      "cpp": 1.21
+    },
+    {
+      "is_nonstop": false,
+      "segments": [
+        {
+          "flight_number": "AA39",
+          "departure_time": "11:47 PM PM",
+          "arrival_time": "10:00 AM+1\n, Arrives on December 16 AM"
+        }
+      ],
+      "total_duration": "7h 13m",
+      "points_required": 15000,
+      "cash_price_usd": 219.0,
+      "taxes_fees_usd": 11.2,
+      "cpp": 1.39
+    },
+    {
+      "is_nonstop": false,
+      "segments": [
+        {
+          "flight_number": "AA40",
+          "departure_time": "11:59 PM PM",
+          "arrival_time": "11:28 AM+1\n, Arrives on December 16 AM"
+        }
+      ],
+      "total_duration": "8h 29m",
+      "points_required": 15000,
+      "cash_price_usd": 177.0,
+      "taxes_fees_usd": 5.6,
+      "cpp": 1.14
+    }
+  ],
+  "total_results": 40
+}

@@ -12,7 +12,6 @@ dist/
 build/
 
 # Output files
-output/*.json
 debug*.html
 
 # IDEs
