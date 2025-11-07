@@ -2,6 +2,7 @@
 """AA.com flight scraper with Selenium"""
 import time
 from selenium.webdriver.common.by import By
+from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.common.keys import Keys
 from src.browser import wait_for_element, wait_for_clickable
 from src.config import (
@@ -136,8 +137,32 @@ def extract_flight_data(driver, is_award=False):
                 duration = row.find_element(By.CSS_SELECTOR, '.duration').text.strip()
 
                 # Get Main cabin cash price
-                main_button = row.find_element(By.CSS_SELECTOR, 'button.btn-flight.MAIN')
-                price_text = main_button.find_element(By.CSS_SELECTOR, '.per-pax-amount').text.strip()
+                price_text = "N/A"
+                try:
+                    # Click the main group button to ensure columns are visible
+                    main_group_button = row.find_element(By.CSS_SELECTOR, 'button.btn-flight.MAIN')
+                    main_group_button.click()
+                    time.sleep(0.5)
+
+                    # Find the correct 'Main' fare cell
+                    fare_cells = row.find_elements(By.CSS_SELECTOR, 'div.fare')
+                    main_fare_cell = None
+                    for cell in fare_cells:
+                        try:
+                            # Look for the indicator that uniquely identifies the Main Cabin fare
+                            cell.find_element(By.CSS_SELECTOR, '.product-group-indicator.main.coach')
+                            main_fare_cell = cell
+                            break
+                        except NoSuchElementException:
+                            continue
+                    
+                    if main_fare_cell:
+                        price_text = main_fare_cell.find_element(By.CSS_SELECTOR, '.total .amount').text.strip()
+                    else:
+                        print(f"[INFO] Main cabin fare cell not found for flight {i+1}.")
+
+                except Exception as e:
+                    print(f"[WARN] Error extracting cash price for flight {i+1}: {e}")
 
             # Extract flight number and stops info
             try:
